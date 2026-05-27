@@ -2,7 +2,7 @@
 
 API RESTful construída com Node.js, Express e MongoDB utilizando arquitetura MVC com autenticação via JWT.
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 ```
 src/
@@ -25,7 +25,7 @@ src/
 └── server.js                # Ponto de entrada
 ```
 
-## 🚀 Como executar
+##  Como executar
 
 ### 1. Pré-requisitos
 - Node.js v18+
@@ -63,9 +63,9 @@ npm run dev
 
 ---
 
-## 📋 Endpoints
+##  Endpoints
 
-### 🔓 Autenticação (público)
+###  Autenticação (público)
 
 #### Registrar usuário
 ```
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 ---
 
-### 🔐 Usuários (requer token JWT)
+###  Usuários (requer token JWT)
 
 > Envie o token no header: `Authorization: Bearer <token>`
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 
 ---
 
-### 📝 Tarefas (requer token JWT)
+###  Tarefas (requer token JWT)
 
 | Método | Rota              | Descrição                        |
 |--------|-------------------|----------------------------------|
@@ -165,7 +165,7 @@ GET /api/tarefas?status=concluida
 
 ---
 
-## 🗄️ Modelos de Dados
+##  Modelos de Dados
 
 ### User
 | Campo     | Tipo   | Obrigatório | Observações              |
@@ -188,7 +188,7 @@ GET /api/tarefas?status=concluida
 
 ---
 
-## 🔒 Segurança
+##  Segurança
 
 - Senhas criptografadas com **bcryptjs** (salt rounds: 12)
 - Autenticação via **JWT** com expiração configurável
@@ -196,7 +196,7 @@ GET /api/tarefas?status=concluida
 - Tarefas isoladas por usuário (cada um vê apenas as suas)
 - Senha nunca retornada nas respostas (`select: false`)
 
-## 📦 Dependências
+##  Dependências
 
 | Pacote        | Versão  | Uso                          |
 |---------------|---------|------------------------------|
